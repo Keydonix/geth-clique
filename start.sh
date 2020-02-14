@@ -1,5 +1,6 @@
 #!/bin/bash
 exec geth \
+	--allow-insecure-unlock
 	--networkid "$(cat /geth/genesis.json | jq '.config.chainId')" \
 	--datadir "/geth/chain" \
 	--keystore "/geth/keys" \
