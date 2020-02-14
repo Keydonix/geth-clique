@@ -1,7 +1,6 @@
-FROM ethereum/client-go:v1.8.27
+FROM ethereum/client-go:v1.9.10
 
-RUN apk update \
-	&& apk add bash curl coreutils jq
+RUN apk update && apk add bash curl coreutils jq
 
 COPY genesis.json /geth/genesis.json
 ADD dev-key.json /geth/keys/dev-key.json
