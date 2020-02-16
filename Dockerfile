@@ -1,4 +1,5 @@
-FROM ethereum/client-go:v1.9.10
+# v1.9.10
+FROM ethereum/client-go@sha256:70006bbda458df5145f2b441cd790c36e90c467ec6a50005415a78d68ed5ca3e
 
 RUN apk update && apk add bash curl coreutils jq
 
